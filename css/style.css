@@ -254,39 +254,65 @@ img {
 
 .modal-icon-box {
   position: relative;
-  background-color: violet;
 }
 
 .modal-form-list {}
 
 .contact-icon {
   position: absolute;
-  left: 0;
-  transform: translateX(-90%);
-  transform: translateY(-80%);
-  fill: red;
+  width: 18px;
+  height: 18px;
+  left: 10px;
+  top: 11px;
+
+  fill: var(--navy-blue);
 }
 
-.form-input:hover .contact-icon,
-.form-input:focus .contact-icon {
-  fill: yellow;
+.form-input:hover+.contact-icon,
+.form-input:focus+.contact-icon {
 
+  fill: var(--iris);
+  outline: none;
 }
 
 .form-input {
 
-  width: 340px;
+  width: 360px;
   height: 40px;
   border-radius: 4px;
   padding: 11px 16px 11px 38px;
-  border: 3px solid var(--NAVY-BLUE-modal,
+  border: 1px solid var(--NAVY-BLUE-modal,
       rgba(46, 47, 66, 0.40));
+      outline: none;
 }
 
-.form-input:hover,
-.form-input:focus {
-  border: 1px solid red;
+.modal-icon-box:hover {
+  border: 1px solid var(--iris);
+  border-radius: 4px;
+  outline: none;
+}
 
+.form-textarea {
+  width: 360px;
+  height: 120px;
+  color: var(--NAVY-BLUE-modal, rgba(46, 47, 66, 0.40));
+  resize: none;
+  /* Small Text */
+  font-family: Roboto;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 14px;
+  /* 116.667% */
+  letter-spacing: 0.48px;
+  outline: none;
+  border: 1px solid var(--NAVY-BLUE-modal,
+      rgba(46, 47, 66, 0.40));
+
+}
+
+.form-textarea:hover {
+  border: 1px solid var(--iris);
 }
 
 .form-terms {
@@ -303,12 +329,13 @@ img {
 }
 
 .form-terms-checkbox {
-  border: 1px solid red;
-  outline: red;
+  background-color: yellow;
+  background-color: var(--ocean);
 }
 
-.form-terms-checkbox :checked {
-  fill: var(--ocean);
+.form-terms-checkbox:checked {
+  background-color: yellow;
+  fill: yellow;
 }
 
 .form-policy {
