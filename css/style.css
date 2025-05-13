@@ -330,11 +330,11 @@ img {
 
 .form-terms-checkbox {
   background-color: yellow;
-  background-color: var(--ocean);
+ 
 }
 
 .form-terms-checkbox:checked {
-  background-color: yellow;
+ 
   fill: yellow;
 }
 
