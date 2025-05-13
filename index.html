@@ -93,46 +93,79 @@
             <button class="effective-button">Order Service</button>
           </div>
 
-          <div class="form">
-            <form class="form-content">
+          <div class="modal">
+            <div class="modal-design">
+              <form class="form-content">
 
-              <p class="form-header"> Leave your contacts and we will call you back</p>
-              <ul>
+                <p class="form-header"> Leave your contacts and we will call you back</p>
 
-                <li class="hero-form-list">
-                 
-                  <label .class="form-label" for="credential">Name </label>
-                   <img class="hero-form-icon" src="./images/icon-person.svg" alt="icon-send">
-                  <input class="form-input" type="text">
-                  
-                </li>
-              </ul>
-              <li class="hero-form-list">
-                
-                <label .class="form-label" for="credential">Phone </label>
-                <img class="hero-form-icon" src="./images/icon-phone.svg" alt="icon-send">
-                <input class="form-input" type="number">
-                
-              </li>
-              <li class="hero-form-list">
-                
-                <label .class="form-label" for="credential">Email </label>
-                <img class="hero-form-icon" src="./images/icon-mailbox.svg" alt="icon-send">
-                <input class="form-input" type="email">
+                <ul class="form-order">
 
-              </li>
-              <li class="hero-form-list">
-                <label .class="form-label " for="credential">Comment </label>
+                  <li class="modal-form-list">
+                    <div class="form-title">
 
-                <input class="form-comment" type="text" placeholder="Text input" >
-              </li>
+                      <label .class="form-label" for="name">Name </label>
 
-              <div class="form-terms">
-                <input type="checkbox">
-                <p>I accept the terms and conditions of the <a class="form-policy" href="#"> Privacy Policy</a>  </p>
-              </div>
-              <button class="form-button" type="submit">Send</button>
-            </form>
+                      <div class="modal-icon-box">
+
+                        <input class="form-input" type="text">
+
+                        <svg class="icon icon-person contact-icon">
+                          <use xlink:href="./images/icons/symbol-defs.svg#icon-person"></use>
+                        </svg>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li class="modal-form-list">
+                    <div class="form-title">
+
+                      <label .class="form-label" for="phone">Phone</label>
+
+                      <div class="modal-icon-box">
+                        <input class="form-input" type="text">
+
+                        <svg class="icon icon-phone contact-icon">
+                          <use xlink:href="./images/icons/symbol-defs.svg#icon-phone"></use>
+                        </svg>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li class="modal-form-list">
+                    <div class="form-title">
+
+                      <label .class="form-label" for="email">Email </label>
+
+                      <div class="modal-icon-box">
+                        <input class="form-input" type="text">
+
+                        <svg class="icon icon-mailbox contact-icon">
+                          <use xlink:href="./images/icons/symbol-defs.svg#icon-mailbox"></use>
+                        </svg>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li class="modal-form-list">
+                    <div class="form-title">
+
+                      <label .class="form-label" for="name">Comment </label>
+
+                      <textarea class="form-input" type="text" placeholder="Text input"></textarea>
+                    </div>
+                  </li>
+
+                </ul>
+
+
+                <div class="form-terms">
+                  <input type="checkbox" class="form-terms-checkbox">
+                  <p>I accept the terms and conditions of the <a class="form-policy" href="#"> Privacy Policy</a> </p>
+                </div>
+                <button class="form-button" type="submit">Send</button>
+              </form>
+            </div>
           </div>
       </section>
 
@@ -499,7 +532,7 @@
           <div class="media">
             <h4>Social media</h4>
 
-            <ul class="icon-nav">
+            <ul class="foot-icon-nav">
 
               <li class="icon-cell"> <!-- insta-->
                 <a href="#"><svg class="icon icon-instagram icona-foot">
