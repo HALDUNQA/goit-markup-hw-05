@@ -626,6 +626,7 @@ img {
 
 /* MODAL CSS */
 .modal-background {
+  /*visibility: hidden;*/
   position: fixed;
   top: 0;
   margin-left: 36px;
@@ -640,7 +641,8 @@ img {
 }
 
 .modal {
-
+  
+  position: absolute;
   display: flex;
   flex-direction: column;
   width: 408px;
@@ -661,7 +663,35 @@ img {
 
 }
 
+/* BUTTON CLOSE*/
+.button-modal {
+  width: 24px;
+  height: 24px;
+  margin-top: 24px;
+  margin-left: 360px;
+  border-radius: 50%;
+  border: 1px solid var(--navy-blue-modal);
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--cornflower);
+}
 
+.close-icon-check {
+  width: 8px;
+  height: 8px;
+  padding-bottom: 2px;
+  fill: var(--navy-blue);
+}
+
+.button-modal:hover,
+.button-modal:focus{
+  background-color: var(--ocean);
+  fill: var(--white);
+  border: none;
+}
+
+/*
 .close-wrapper-checkbox {
   width: 24px;
   height: 24px;
@@ -678,20 +708,23 @@ img {
 
 .form-close-input:checked+.close-wrapper-checkbox {
   background-color: var(--ocean);
-
+fill: var(--white);
 }
 .modal-label-wrapper {
   display: flex;
   gap: 8px;
 
 }
+.close-wrapper-checkbox:checked + .close-icon-check{
+fill: var(--white);
+}
 
 .close-icon-check {
   width: 8px;
   height: 8px;
   fill: black;
-  background-color: violet;
-}
+  
+}     */
 
 .form-header {
   font-family: var(--font-family);
@@ -729,6 +762,7 @@ img {
 .modal-icon-box {
   position: relative;
 }
+
 .contact-icon {
   position: absolute;
   width: 18px;
