@@ -629,7 +629,8 @@ img {
   /*visibility: hidden;*/
   position: fixed;
   top: 0;
-  margin-left: 36px;
+  margin: 0 auto;
+ 
   z-index: 9999999;
 
   width: 100%;
