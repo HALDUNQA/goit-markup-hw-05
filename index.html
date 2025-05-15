@@ -92,81 +92,6 @@
             <h1 class="effective">Effective Solutions <br />for Your Business</h1>
             <button class="effective-button">Order Service</button>
           </div>
-
-          <div class="modal">
-            <div class="modal-design">
-              <form class="form-content">
-
-                <p class="form-header"> Leave your contacts and we will call you back</p>
-
-                <ul class="form-order">
-
-                  <li class="modal-form-list">
-                    <div class="form-title">
-
-                      <label .class="form-label" for="name">Name </label>
-
-                      <div class="modal-icon-box">
-
-                        <input class="form-input" type="text">
-
-                        <svg class="icon-person contact-icon">
-                          <use xlink:href="./images/icons/symbol-defs.svg#icon-person"></use>
-                        </svg>
-                      </div>
-                    </div>
-                  </li>
-
-                  <li class="modal-form-list">
-                    <div class="form-title">
-
-                      <label .class="form-label" for="phone">Phone</label>
-
-                      <div class="modal-icon-box">
-                        <input class="form-input" type="text">
-
-                        <svg class="icon-phone contact-icon">
-                          <use xlink:href="./images/icons/symbol-defs.svg#icon-phone"></use>
-                        </svg>
-                      </div>
-                    </div>
-                  </li>
-
-                  <li class="modal-form-list">
-                    <div class="form-title">
-
-                      <label .class="form-label" for="email">Email </label>
-
-                      <div class="modal-icon-box">
-                        <input class="form-input" type="text">
-
-                        <svg class="icon-mailbox contact-icon">
-                          <use xlink:href="./images/icons/symbol-defs.svg#icon-mailbox"></use>
-                        </svg>
-                      </div>
-                    </div>
-                  </li>
-
-                  <li class="modal-form-list">
-                    <div class="form-title">
-
-                      <label .class="form-label" for="name">Comment </label>
-
-                      <textarea class="form-textarea" type="text" placeholder="Text input"></textarea>
-                    </div>
-                  </li>
-
-                </ul>
-
-                <div class="form-terms">
-                  <input type="checkbox" class="form-terms-checkbox">
-                  
-                  <p>I accept the terms and conditions of the <a class="form-policy" href="#"> Privacy Policy</a> </p>
-                </div>
-                <button class="form-button" type="submit">Send</button>
-              </form>
-            </div>
-          </div>
       </section>
 
       <section class="container">
@@ -511,7 +436,115 @@
 
         </div>
       </section>
+      <!--modal part-->
+      <div class="modal-background">
+        <div class="modal">
+          <div class="modal-design">
+            <!--modal close part-->
+            <div class="form-close">
 
+              <label class="close-label-wrapper">
+
+                <input type="checkbox" class="form-close-input visually-hidden ">
+
+                <div class="close-wrapper-checkbox">
+
+                  <svg class="close-check-icon close-icon-check">
+                    <use xlink:href="./images/form-icons/symbol-defs.svg#icon-close-white"></use>
+                  </svg>
+                </div>
+
+              </label>
+
+            </div>
+            <form class="form-content">
+
+              <p class="form-header"> Leave your contacts and we will call you back</p>
+
+              <ul class="form-order">
+
+                <li class="modal-form-list">
+                  <div class="form-title">
+
+                    <label .class="form-label" for="name">Name </label>
+
+                    <div class="modal-icon-box">
+
+                      <input class="form-input" type="text">
+
+                      <svg class="icon-person contact-icon">
+                        <use xlink:href="./images/form-icons/symbol-defs.svg#icon-username"></use>
+                      </svg>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="modal-form-list">
+                  <div class="form-title">
+
+                    <label .class="form-label" for="phone">Phone</label>
+
+                    <div class="modal-icon-box">
+                      <input class="form-input" type="text">
+
+                      <svg class="icon-phone contact-icon">
+                        <use xlink:href="./images/form-icons/symbol-defs.svg#icon-phone"></use>
+                      </svg>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="modal-form-list">
+                  <div class="form-title">
+
+                    <label .class="form-label" for="email">Email </label>
+
+                    <div class="modal-icon-box">
+                      <input class="form-input" type="text">
+
+                      <svg class="icon-mailbox contact-icon">
+                        <use xlink:href="./images/form-icons/symbol-defs.svg#icon-email"></use>
+                      </svg>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="modal-form-list">
+                  <div class="form-title">
+
+                    <label .class="form-label" for="name">Comment </label>
+
+                    <textarea class="form-textarea" type="text" placeholder="Text input"></textarea>
+                  </div>
+                </li>
+
+              </ul>
+
+              <div class="form-terms">
+
+                <label class="modal-label-wrapper">
+
+                  <input type="checkbox" class="form-terms-input visually-hidden ">
+
+                  <div class="modal-wrapper-checkbox">
+
+                    <svg class="terms-check-icon icon-check">
+                      <use xlink:href="./images/form-icons/symbol-defs.svg#icon-check"></use>
+                    </svg>
+                  </div>
+
+                  <p>I accept the terms and conditions of the <a class="form-policy" href="#"> Privacy Policy</a> </p>
+
+
+                </label>
+
+
+              </div>
+              <button class="form-button" type="submit">Send</button>
+            </form>
+          </div>
+        </div>
+      </div>
     </main>
 
     <footer>
@@ -553,7 +586,7 @@
               </li>
 
               <li class="icon-cell"><!-- linkdin-->
-                <a href="#"> <svg class="icon icon-twitter icona-foot">
+                <a href="#"> <svg class="icon icon-twitter icona-foot foot-icon-color">
                     <use xlink:href="./images/symbol-defs.svg#icon-linkedin"></use>
                   </svg></a>
               </li>
@@ -561,7 +594,6 @@
             </ul>
 
           </div>
-
           <div class="foot-form">
             <div class="foot-emailbox">
               <div class="foot-email-title">
@@ -574,10 +606,14 @@
               <div class="foot-button-text">
                 <button type="submit" class="foot-form-button">Subcribe
                 </button>
-                <img class="button-icon" src="./images/icon-send.svg" alt="icon-send">
+                <svg class="foot-subcribe-button-icon icon-send">
+                  <use xlink:href="./images/form-icons/symbol-defs.svg#icon-send"></use>
+                </svg>
               </div>
             </div>
           </div>
+
+        </div>
         </div>
       </section>
     </footer>
