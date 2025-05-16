@@ -559,6 +559,7 @@ img {
   border-radius: 4px;
   color: var(--white);
   padding-left: 16px;
+  cursor: pointer;
 }
 
 .foot-input::placeholder {
@@ -605,7 +606,6 @@ img {
   display: flex;
   flex-direction: row;
   gap: 24px;
-
   bottom: 0;
   transform: translateY(70%);
 }
@@ -624,20 +624,26 @@ img {
   margin-top: 50px;
 }
 
+.foot-form-button:hover {
+  cursor: pointer;
+}
+
 /* MODAL CSS */
 
 .is-open {
   /*visibility: hidden;*/
 }
 
-.modal-backgdrop {
+.modal-backdrop {
   position: fixed;
   top: 0;
-  margin: 0 auto;
-  width: 100%;
+  left: 0;
+  width: 1440px;
   height: 100%;
-  background-color: rgba(46, 47, 66, 0.4);
+ 
   background-color: var(--navy-blue-modal);
+  z-index: 9999;
+  visibility: visible;
 }
 
 .modal {
@@ -679,10 +685,10 @@ img {
 }
 
 .close-icon-check {
-  width: 8px;
-  height: 8px;
+  width: 18px;
+  height: 18px;
   padding-bottom: 2px;
-  fill: var(--navy-blue);
+  fill: red;
 }
 
 .button-modal:hover,
