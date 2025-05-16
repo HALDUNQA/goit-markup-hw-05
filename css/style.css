@@ -625,21 +625,22 @@ img {
 }
 
 /* MODAL CSS */
-.modal-background {
+
+.is-open {
   /*visibility: hidden;*/
+}
+
+.modal-backgdrop {
   position: fixed;
   top: 0;
   margin: 0 auto;
- 
   width: 100%;
   height: 100%;
   background-color: rgba(46, 47, 66, 0.4);
-  height: 676px;
   background-color: var(--navy-blue-modal);
 }
 
 .modal {
-  
   position: absolute;
   display: flex;
   flex-direction: column;
@@ -648,8 +649,10 @@ img {
   border-radius: 4px;
   background: var(--DAIRY, #FCFCFC);
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
-
-  margin-left: 550px;
+  margin: 0 auto;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
   top: 80px;
 }
 
@@ -683,7 +686,7 @@ img {
 }
 
 .button-modal:hover,
-.button-modal:focus{
+.button-modal:focus {
   background-color: var(--ocean);
   fill: var(--white);
   border: none;
