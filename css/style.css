@@ -640,7 +640,7 @@ img {
   left: 0;
   width: 1440px;
   height: 100%;
- 
+
   background-color: var(--navy-blue-modal);
   z-index: 9999;
   visibility: visible;
@@ -878,6 +878,8 @@ fill: var(--white);
   height: 56px;
   border-radius: 4px;
   background-color: var(--iris);
+  outline: none;
+  border: none;
   margin: 0 auto;
   color: var(--white);
 }
