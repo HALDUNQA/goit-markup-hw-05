@@ -632,7 +632,13 @@ img {
 /* MODAL CSS */
 
 .modal-backdrop {
+  display: none;
+}
 
+.is-open {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: fixed;
   top: 0;
   left: 0;
@@ -640,12 +646,13 @@ img {
   height: 100%;
   background-color: var(--navy-blue-modal);
   z-index: 9999;
-  visibility: hidden;
 }
 
-.modal-backdrop.is-open {
+/* is-open */
+
+/* .modal-backdrop.is-open {
   visibility: visible;
-}
+} */
 
 .modal {
 
